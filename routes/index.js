@@ -45,12 +45,13 @@ router.get('/', function(req, res, next) {
               var a = $(this).children().html();
               var json = JSON.parse(a);
               console.log(json);
-              res.render('index', { title: 'Demo bet365 scrapper',data:json['F']});
+
         });
       }
     }
 
     request(options, callback);
+    res.render('index', { title: 'Demo bet365 scrapper',data:json['F']});
 
 
 });
