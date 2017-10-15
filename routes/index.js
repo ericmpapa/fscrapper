@@ -44,7 +44,7 @@ router.get('/', function(req, res, next) {
         $('.qb-JsonData').each(function(i, element){
               var a = $(this).children().html();
               var json = JSON.parse(a);
-              console.log(json);
+              //console.log(json);
               res.render('index', { title: 'Demo bet365 scrapper',data:json['F']});
         });
       }
